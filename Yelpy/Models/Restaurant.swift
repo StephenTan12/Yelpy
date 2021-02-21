@@ -8,12 +8,16 @@
 
 import Foundation
 
-struct Restaurant {
-    var name: String?
-    var address: String?
+struct Restaurant: Codable {
+    let categories: [[String: String]]
+    let image_url: String
+    let name: String
+    let rating: Double
     
-    init(name: String, address: String) {
-        self.name = name
-        self.address = address
+    enum CodingKeys: String, CodingKey {
+        case categories
+        case image_url
+        case name
+        case rating
     }
 }
