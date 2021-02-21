@@ -18,7 +18,6 @@ class RestaurantCell: UITableViewCell {
     let label: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textAlignment = .left
 
         return label
     }()
@@ -26,7 +25,7 @@ class RestaurantCell: UITableViewCell {
     let restaurantImage: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-
+        
         return image
     }()
     
@@ -35,11 +34,14 @@ class RestaurantCell: UITableViewCell {
         addSubview(restaurantImage)
         
         NSLayoutConstraint.activate([
-            label.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.7),
-            label.centerXAnchor.constraint(equalTo: centerXAnchor)
+            label.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor, constant: 10),
+            label.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            restaurantImage.topAnchor.constraint(equalTo: contentView.layoutMarginsGuide.topAnchor, constant: 10),
+            restaurantImage.bottomAnchor.constraint(equalTo: contentView.layoutMarginsGuide.bottomAnchor, constant: -10),
+            restaurantImage.trailingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.trailingAnchor, constant: -10),
+            restaurantImage.leadingAnchor.constraint(equalTo: label.leadingAnchor, constant: 60)
         ])
     }
-    
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
