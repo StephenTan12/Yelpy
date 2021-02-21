@@ -9,16 +9,45 @@
 import UIKit
 
 class RestaurantCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var restaurant: Restaurant! {
+        didSet {
+            label.text = restaurant.name
+        }
     }
+    
+    let label: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .left
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+        return label
+    }()
+    
+    let restaurantImage: UIImageView = {
+        let image = UIImageView()
+        image.translatesAutoresizingMaskIntoConstraints = false
 
-        // Configure the view for the selected state
+        return image
+    }()
+    
+    func addLabel() {
+        addSubview(label)
+        addSubview(restaurantImage)
+        
+        NSLayoutConstraint.activate([
+            label.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.7),
+            label.centerXAnchor.constraint(equalTo: centerXAnchor)
+        ])
     }
-
+    
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        addLabel()
+        
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
