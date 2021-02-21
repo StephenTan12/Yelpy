@@ -14,7 +14,7 @@
 		E4DCFD4825DF540000373533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DCFD4625DF540000373533 /* LaunchScreen.storyboard */; };
 		E4DCFD5425DF622C00373533 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DCFD5325DF622C00373533 /* RestaurantCell.swift */; };
 		E4DCFD5625DF625100373533 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DCFD5525DF625100373533 /* API.swift */; };
-		E4DCFD5825DF627300373533 /* RestaurantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DCFD5725DF627300373533 /* RestaurantModel.swift */; };
+		E4DCFD5825DF627300373533 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DCFD5725DF627300373533 /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		E4DCFD4925DF540000373533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4DCFD5325DF622C00373533 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		E4DCFD5525DF625100373533 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		E4DCFD5725DF627300373533 /* RestaurantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantModel.swift; sourceTree = "<group>"; };
+		E4DCFD5725DF627300373533 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 		E4DCFD5225DF5FCB00373533 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E4DCFD5725DF627300373533 /* RestaurantModel.swift */,
+				E4DCFD5725DF627300373533 /* Restaurant.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 				E4DCFD4025DF53FB00373533 /* ViewController.swift in Sources */,
 				E4DCFD3C25DF53FB00373533 /* AppDelegate.swift in Sources */,
 				E4DCFD3E25DF53FB00373533 /* SceneDelegate.swift in Sources */,
-				E4DCFD5825DF627300373533 /* RestaurantModel.swift in Sources */,
+				E4DCFD5825DF627300373533 /* Restaurant.swift in Sources */,
 				E4DCFD5625DF625100373533 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
