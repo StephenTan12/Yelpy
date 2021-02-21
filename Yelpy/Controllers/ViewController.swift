@@ -40,7 +40,12 @@ class ViewController: UIViewController {
         
         tableView.register(RestaurantCell.self, forCellReuseIdentifier: "restaurant")
         
-        restaurantsArray.append(Restaurant.init(name: "name", address: "wow"))
+        API.getRestaurants { (restaurants) in
+            guard let restaurants = restaurants else {return}
+            self.restaurantsArray = restaurants
+            self.tableView.reloadData()
+        }
+        
         tableView.reloadData()
     }
 }

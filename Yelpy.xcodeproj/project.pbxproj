@@ -15,6 +15,7 @@
 		E4DCFD5425DF622C00373533 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DCFD5325DF622C00373533 /* RestaurantCell.swift */; };
 		E4DCFD5625DF625100373533 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DCFD5525DF625100373533 /* API.swift */; };
 		E4DCFD5825DF627300373533 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DCFD5725DF627300373533 /* Restaurant.swift */; };
+		E4DCFD5E25E215EC00373533 /* RestaurantResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DCFD5D25E215EC00373533 /* RestaurantResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E4DCFD5325DF622C00373533 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		E4DCFD5525DF625100373533 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E4DCFD5725DF627300373533 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		E4DCFD5D25E215EC00373533 /* RestaurantResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				E4DCFD5725DF627300373533 /* Restaurant.swift */,
+				E4DCFD5D25E215EC00373533 /* RestaurantResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4DCFD5425DF622C00373533 /* RestaurantCell.swift in Sources */,
+				E4DCFD5E25E215EC00373533 /* RestaurantResponse.swift in Sources */,
 				E4DCFD4025DF53FB00373533 /* ViewController.swift in Sources */,
 				E4DCFD3C25DF53FB00373533 /* AppDelegate.swift in Sources */,
 				E4DCFD3E25DF53FB00373533 /* SceneDelegate.swift in Sources */,
